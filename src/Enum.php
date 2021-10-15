@@ -308,6 +308,7 @@ abstract class Enum implements JsonSerializable
     /**
      * @return int|string
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return $this->value;
